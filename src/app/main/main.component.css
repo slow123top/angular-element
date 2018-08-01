@@ -9,6 +9,28 @@
     /* border-bottom: 1px solid black; */
 }
 .main-header img{
-    height: 100%;
+    /* height: 100%; */
     width: 100%
+}
+.main-main-card{
+    margin-top:2rem;
+}
+.main-main{
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+}
+.main-main-card-text{
+    padding: .5rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.el-card{
+    width: 25%;
+}
+.el-card__header{
+    padding: .8rem;
+}
+.main-footer-img img{
+    width: 10rem;
 }

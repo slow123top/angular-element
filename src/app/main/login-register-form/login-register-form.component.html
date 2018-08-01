@@ -1,0 +1,45 @@
+<el-form label-width="0px" size="small" el-class="form-demo">
+  <el-form-item>
+    <el-input placeholder="用户名/手机号/邮箱">
+      <ng-template #prepend>
+        <span>
+          <el-icon name="star-on"></el-icon>
+        </span>
+      </ng-template>
+    </el-input>
+  </el-form-item>
+  <el-form-item *ngIf="!formObj.formLogin">
+    <el-input placeholder="请输入密码" class="form-input-code">
+      <ng-template #append>
+        <el-button type="success">发送验证码</el-button>
+      </ng-template>
+    </el-input>
+  </el-form-item>
+  <el-form-item>
+    <el-input placeholder="请输入密码">
+      <ng-template #prepend>
+        <span>
+          <el-icon name="message"></el-icon>
+        </span>
+      </ng-template>
+    </el-input>
+  </el-form-item>
+  <el-form-item *ngIf="!formObj.formLogin">
+      <el-input placeholder="确认密码">
+        <ng-template #prepend>
+          <span>
+            <el-icon name="message"></el-icon>
+          </span>
+        </ng-template>
+      </el-input>
+    </el-form-item>
+  <el-form-item>
+    <el-button type="primary" style="width: 100%">提交</el-button>
+  </el-form-item>
+  <el-form-item>
+    <el-button type="danger" style="width: 100%">重置</el-button>
+    <span *ngIf="formObj.formLogin">已有账号？请<a href="#">登录</a></span>
+    <span *ngIf="!formObj.formLogin">没有账号？请先<a href="#">注册</a></span>
+  </el-form-item>
+
+</el-form>
