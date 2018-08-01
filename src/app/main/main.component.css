@@ -1,0 +1,14 @@
+.main-header-text>li {
+    /* display: inline-block; */
+    list-style: none;
+    float: left;
+    margin-left: 1rem;
+    line-height: 2;
+}
+.main-header {
+    /* border-bottom: 1px solid black; */
+}
+.main-header img{
+    height: 100%;
+    width: 100%
+}
